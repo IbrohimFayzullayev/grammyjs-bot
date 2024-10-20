@@ -95,6 +95,23 @@ bot.hears(/пипец/, async (ctx) => {
   await ctx.reply("Пипец какой-то!");
 });
 
+// bot.command("site", (msg) => {
+//   const chatId = msg.chat.id;
+
+//   bot.sendMessage(chatId, "Welcome! Click the button to open the web app.", {
+//     reply_markup: {
+//       inline_keyboard: [
+//         [
+//           {
+//             text: "Open Web App",
+//             web_app: { url: "https://tuoling.netlify.app/" }, // Replace with your web app URL
+//           },
+//         ],
+//       ],
+//     },
+//   });
+// });
+
 bot.catch((err) => {
   const ctx = err.ctx;
   console.error(`Error while handling update ${ctx.update.update_id}:`);
